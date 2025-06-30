@@ -2,6 +2,12 @@
 	Global CSS 
 ===============================*/
 
+html {
+    scrollbar-width: thin; /* "auto" | "thin" | "none" */
+    scrollbar-color: #000000 #1a1a1a34; /* thumb (barra) | track (trilho) */
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
@@ -30,6 +36,35 @@ body {
     transition: all 0.4s ease;
 }
 
+/* ===== Scrollbar Preta (WebKit - Chrome, Edge, Safari, Opera) ===== */
+::-webkit-scrollbar {
+  width: 10px; /* Largura da barra vertical */
+  height: 10px; /* Altura da barra horizontal (se aplicável) */
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a; /* Cor de fundo escura (quase preto) */
+  border-radius: 5px; /* Borda arredondada */
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333; /* Cor da barra de scroll (cinza escuro) */
+  border-radius: 5px; /* Borda arredondada */
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cor ao passar o mouse (cinza mais claro) */
+}
+
+.btn {
+    background-color: #000;
+}
+
+@media only screen and (max-width: 767px) {
+    .slicknav_menu .slicknav_icon-bar {
+        background-color: #000000 !important;
+    }
+}
 .pro-features.active {
     right: 0;
 }
@@ -42,7 +77,7 @@ body {
 
 .pro-features li.title {
     font-weight: 600;
-    color: #1A76D1;
+    color: #000;
     font-size: 15px;
 }
 .pro-features .button .btn {
@@ -71,7 +106,7 @@ body {
     line-height: 45px;
     font-size: 14px;
     border-radius: 5px 0 0 5px;
-    background: #1A76D1;
+    background: #000;
     text-align: center;
     color: #fff;
     top: 0;
@@ -82,7 +117,7 @@ body {
     bottom: 15px;
     right: 15px;
     padding: 10px 20px;
-    background: #1a76d1;
+    background: #000;
     color: #fff;
     font-size: 25px;
     width: 45px;
@@ -129,7 +164,7 @@ body {
     line-height: 45px;
     font-size: 21px;
     border-radius: 5px 0 0 5px;
-    background: #1A76D1;
+    background: #000;
     text-align: center;
     color: #fff !important;
     top: 0;
@@ -164,7 +199,7 @@ body {
 }
 
 .color-plate span.color1 {
-    background: #1A76D1;
+    background: #000;
 }
 
 .color-plate span.color2 {
@@ -209,6 +244,40 @@ body {
 
 .color-plate span.color12 {
     background: #44ce6f;
+}
+
+/* Loader Styles */
+#loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+    transition: opacity 0.5s ease-out;
+}
+
+.loader-content {
+    text-align: center;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /*=============================
@@ -277,7 +346,7 @@ body {
     bottom: 0;
     height: 3px;
     width: 0%;
-    background: #1A76D1;
+    background: #000;
     border-radius: 5px 5px 0 0;
     opacity: 0;
     visibility: hidden;
@@ -293,7 +362,7 @@ body {
 }
 
 .header .nav li.active a {
-    color: #1A76D1;
+    color: #000;
 }
 
 .header .nav li:hover a:before {
@@ -303,7 +372,7 @@ body {
 }
 
 .header .nav li:hover a {
-    color: #1a76d1;
+    color: #000;
 }
 
 .header .nav li a i {
@@ -323,7 +392,7 @@ body {
     width: 35px;
     line-height: 35px;
     text-align: center;
-    background: #1a76d1;
+    background: #000;
     border-radius: 4px;
     display: block;
     font-size: 12px;
@@ -401,24 +470,26 @@ body {
 .banner .banner-image img {
     width: 100%;
     height: auto;
-    max-width: 500px;
+    max-width: 600px;
 }
 
 .banner p {
-    color: #ffffff;
+    color: #fff;
     font-size: 1.5rem;
     margin: 27px 5px 5px 5px;
     padding: 5px;
     font-weight: 400;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
 }
 
 .banner h1 {
-    color: #ffffff;
+    color: #fff;
     font-size: 3.5rem;
     margin: 5px;
     padding: 5px;
     font-weight: 500;
     line-height: 42px;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
 }
 
 .banner h1 span {
@@ -430,9 +501,8 @@ body {
     margin: 5px;
     color: #fff;
     padding: 5px;
+    text-shadow: 0 2px 4px rgba(255, 255, 255, 0.4);
 }
-
-
 
 .banner .button {
     margin-top: 30px;
@@ -440,7 +510,7 @@ body {
 
 .banner .btn {
     color: #fff;
-    background: #1a76d1;
+    background: #000;
     font-weight: 500;
     display: inline-block;
     margin: 0;
@@ -457,11 +527,17 @@ body {
 }
 
 .banner .btn.primary:before {
-    background: #1A76D1;
+    background: #000;
 }
 
 .banner.index2 .text {
     margin-top: 150px;
+}
+
+@media (max-width: 992px) {
+    .align-items-center {
+        justify-content: center;
+    }
 }
 
 @media (max-width: 767px) {
@@ -484,71 +560,62 @@ body {
         flex-direction: column;
         justify-content: center;
     }
-    
-    .banner h1 {
+
+    .banner h1, .banner h2 {
         font-size: 32px;
         line-height: 36px;
     }
 }
+
+.cursor {
+    opacity: 1;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
 /*===========================
     End Banner CSS Área
 =============================*/
 
 /*===========================
-    Start O Que eu Faço CSS Área
+    Start Quem Sou Eu CSS Área
 =============================*/
-details {
-    margin-bottom: 1rem;
-    cursor: pointer;
-}
 
-summary {
-    font-weight: bold;
-    color: #333;
-    padding: 0.8rem;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    cursor: pointer;
-    transition: transform 0.3s ease;
-}
-
-details[open] summary {
-    color: #007bff;
-}
-
-.expandable-menu {
+.static-menu {
     margin: 1rem 0;
     background-color: #fff;
     overflow: hidden;
     width: 100%;
     max-width: 90vw;
     min-width: 300px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.expandable-menu.hover-active {
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
-    transform: translateZ(20px) scale(1.05); /* Efeito de "salto" */
+.menu-title {
+    font-weight: bold;
+    color: #2c2d3f;
+    padding: 0.8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.expandable-menu .content {
+.static-menu .content {
     padding: 0 1rem 1rem;
     color: #555;
 }
 
-@media (hover: none) {
-    .expandable-menu:hover, #OQueEuFaco:hover #minhaImagem {
-        transform: none;
-    }
-    #minhaImagem {
-        transition: none;
-    }
+/* Remove os estilos interativos */
+.static-menu, .menu-title {
+    cursor: default !important;
 }
 
 
 /*===========================
-    END O Que eu Faço CSS Área
+    END Quem Sou Eu CSS Área
 =============================*/
 
 /*===============================
@@ -571,18 +638,24 @@ details[open] summary {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    min-height: 0;
 }
 
-.project-card a{
-    color: blue;
+.col-lg-7 {
+    overflow-y: hidden;
 }
 
 .project-info {
     padding: 25px;
+    min-height: 100px;
+    /* min-height: 210px; add  esse min para +2 projetos*/
     border-radius: 5px;
-    height: 120px;
-    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
 
+.project-card a{
+    color: blue;
 }
 
 .siteIframe {
@@ -590,7 +663,7 @@ details[open] summary {
     height: 500px;
     border: none;
     border-radius: 12px;
-    box-shadow: 0 16px 24px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 16px 16px rgba(0, 0, 0, 0.3);
 }
 
 /* Responsividade Mobile */
@@ -642,6 +715,11 @@ details[open] summary {
     background-repeat: no-repeat;
 }
 
+.overlay:before {
+    background: #000000;
+    opacity: 1;
+}
+
 .call-action .content {
     text-align: center;
     padding: 100px 265px;
@@ -665,15 +743,15 @@ details[open] summary {
     margin-right: 20px;
     font-weight: 500;
     border: 1px solid #fff;
-    color: #1a76d1;
+    color: #000;
 }
 
 .call-action .content .btn:before {
-    background: #1A76D1;
+    background: #000;
 }
 
 .call-action .content .btn:hover {
-    background: #1A76D1;
+    background: #000;
     color: #fff;
 }
 
@@ -693,7 +771,7 @@ details[open] summary {
 }
 
 .call-action .content .second:hover {
-    color: #1A76D1;
+    color: #000;
     border-color: transparent;
     background: #fff;
 }
@@ -703,6 +781,10 @@ details[open] summary {
 }
 #contatoBotao{
     width: 200px;
+}
+
+.btn:before {
+    background-color: #1a1a1a;
 }
 
 /*===============================
@@ -746,6 +828,13 @@ details[open] summary {
 .badge {
     font-weight: 500;
 }
+/* Adicione isso ao seu CSS existente */
+.icon-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
 /*===============================
     Capacitações área FIM
@@ -764,7 +853,7 @@ section.services.section{
 }
 .services .single-service i{
 	font-size:45px;
-	color:#1a76d1;
+	color:#000;
 	position:absolute;
 	left:0;
 	-webkit-transition:all 0.4s ease;
@@ -782,7 +871,7 @@ section.services.section{
 	font-weight:600;
 }
 .services .single-service h4 a:hover{
-	color:#1A76D1;
+	color:#000;
 }
 .services .single-service p{
 	color:#868686;
@@ -807,7 +896,7 @@ section.services.section{
 .services-details-img blockquote {
 	font-size: 15px;
 	color: #4a6f8a;
-	background-color: #1a76d1;
+	background-color: #000;
 	padding: 30px 75px;
 	line-height: 26px;
 	position: relative;
@@ -841,7 +930,7 @@ section.services.section{
 	font-weight: 600;
 	font-size: 30px;
 	margin-bottom: 15px;
-	border-left: 3px solid #1a76d1;
+	border-left: 3px solid #000;
 	padding-left: 15px;
 }
 .service-details-inner p {
@@ -859,7 +948,7 @@ section.services.section{
 ============================*/
 .appointment{
 	background:#fff;
-	padding-top:100px;
+	padding:100px 0px 60px 0px;
 }
 .appointment.single-page {
 	background: #fff;
@@ -898,7 +987,7 @@ section.services.section{
 }
 .appointment .form textarea{
 	width: 100%;
-	height:200px;
+	height:300px;
     padding: 18px;
 	border:1px solid #eee;
 	text-transform:capitalize;
@@ -935,7 +1024,7 @@ section.services.section{
 }
 .appointment .form-group .list li:hover {
 	color:#fff;
-	background: #1A76D1;
+	background: #000;
 }
 .appointment .appointment-image{}
 .appointment.single-page .button .btn{
@@ -952,7 +1041,7 @@ section.services.section{
 	color:#868686;
 }
 .appointment.single-page .work-hour{
-	background:#1A76D1;
+	background:#000;
 	padding: 40px;
 	box-shadow: 0px 0px 10px #00000024;
 	border-radius: 5px;
@@ -995,157 +1084,154 @@ section.services.section{
 	Start Footer CSS
 ===========================*/
 .footer{
-	position:relative;
+    position:relative;
 }
 .footer .footer-top{
-	padding:100px 0px;
-	position:relative;
-	background:#1A76D1;
+    padding:60px 0px;
+    position:relative;
+    background:#000000;
 }
 .footer .footer-top:before{
-	position:absolute;
-	content:"";
-	left:0;
-	top:0;
-	height:100%;
-	width:100%;
-	background:#000;
-	opacity:0.1;
+    position:absolute;
+    content:"";
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    background:#000;
+    opacity:0.1;
 }
 .footer .single-footer{
-	
+    max-width: 300px;
+    margin: 0 50px;
+    text-align: left;
 }
 .footer .single-footer .social{
-	margin-top:25px;
+    margin-top:25px;
 }
 .footer .single-footer .social li{
-	display:inline-block;
-	margin-right:10px;
+    display:inline-block;
+    margin-right:10px;
 }
 .footer .single-footer .social li:last-child{
-	margin-right:0px;
+    margin-right:0px;
 }
 .footer .single-footer .social li a {
-	height: 34px;
-	width: 34px;
-	line-height: 34px;
-	text-align: center;
-	border: 1px solid #fff;
-	text-align: center;
-	padding: 0;
-	border-radius: 100%;
-	display: block;
-	color:#fff;
-	font-size: 16px;
+    height: 34px;
+    width: 34px;
+    line-height: 34px;
+    text-align: center;
+    border: 1px solid #fff;
+    text-align: center;
+    padding: 0;
+    border-radius: 100%;
+    display: block;
+    color:#fff;
+    font-size: 16px;
 }
 .footer .single-footer .social li a:hover{
-	color:#1A76D1;
-	background:#fff;
-	border-color:transparent;
-}
-.footer .single-footer .social li a i{
-	
+    color:#000;
+    background:#fff;
+    border-color:transparent;
 }
 .footer .single-footer.f-link li a i{
-	margin-right:10px;
+    margin-right:10px;
 }
 .footer .single-footer.f-link li{
-	display:block;
-	margin-bottom:12px;
+    display:block;
+    margin-bottom:12px;
 }
 .footer .single-footer.f-link li:last-child{
-	margin:0;
+    margin:0;
 }
 .footer .single-footer.f-link li a {
-	display: block;
-	color: #fff;
-	text-transform: capitalize;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	font-weight: 400;
+    display: block;
+    color: #fff;
+    text-transform: capitalize;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-weight: 400;
 }
 .footer .single-footer.f-link li a:hover{
-	padding-left:8px;
+    padding-left:8px;
 }
 .footer .single-footer h2{
-	color:#fff;
-	font-size:20px;
-	font-weight:600;
-	text-transform:capitalize;
-	margin-bottom:40px;
-	padding-bottom:20px;
-	text-transform:capitalize;
-	position:relative;
+    color:#fff;
+    font-size:20px;
+    font-weight:600;
+    text-transform:capitalize;
+    margin-bottom:30px;
+    padding-bottom:20px;
+    text-transform:capitalize;
+    position:relative;
 }
 .footer .single-footer h2::before{
-	position: absolute;
-	content: "";
-	left: 0;
-	bottom: 0px;
-	height: 3px;
-	width: 50px;
-	background: #fff;
+    position: absolute;
+    content: "";
+    left: 0;
+    bottom: 0px;
+    height: 3px;
+    width: 50px;
+    background: #fff;
 }
 .footer .single-footer .time-sidual{
-	margin-top:15px;
+    margin-top:15px;
 }
 .footer .single-footer .time-sidual{
-	overflow:hidden;
+    overflow:hidden;
 }
 .footer .single-footer .time-sidual li {
-	display: block;
-	color: #fff;
-	width: 100%;
-	margin-bottom: 5px;
+    display: block;
+    color: #fff;
+    width: 100%;
+    margin-bottom: 5px;
 }
 .footer .single-footer .time-sidual li span{
-	display:inline-block;
-	float:right;
+    display:inline-block;
+    float:right;
 }
 .footer .single-footer .day-head .time {
-	font-weight: 400;
-	float: right;
+    font-weight: 400;
+    float: right;
 }
 .footer .single-footer p{
-	color:#fff;
+    color:#fff;
 }
 .footer .single-footer .newsletter-inner{
-	margin-top:20px;
-	position:relative;
+    margin-top:20px;
+    position:relative;
 }
 .footer .single-footer .newsletter-inner input {
-	background: transparent;
-	border: 1px solid #fff;
-	height: 50px;
-	line-height: 42px;
-	width: 100%;
-	margin-right: 15px;
-	color: #fff;
-	padding-left: 18px;
-	padding-right: 70px;
-	display: inline-block;
-	float: left;
-	border-radius: 0px;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	font-weight: 400;
-	border-radius: 5px;
+    background: transparent;
+    border: 1px solid #fff;
+    height: 50px;
+    line-height: 42px;
+    width: 100%;
+    margin-right: 15px;
+    color: #fff;
+    padding-left: 18px;
+    padding-right: 70px;
+    display: inline-block;
+    float: left;
+    border-radius: 0px;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    font-weight: 400;
+    border-radius: 5px;
 }
 .footer .single-footer .newsletter-inner input:hover{
-	padding-left: 22px;
+    padding-left: 22px;
 }
 .footer input::-webkit-input-placeholder {
     opacity: 1;
     color: #fff !important;
 }
-
 .footer input::-moz-placeholder {
     opacity: 1;
     color: #fff !important;
 }
-
 .footer input::-ms-input-placeholder {
     opacity: 1;
     color: #fff !important;
@@ -1155,49 +1241,88 @@ section.services.section{
     color: #fff !important;
 }
 .footer .single-footer .newsletter-inner .button {
-	position: absolute;
-	right: 0;
-	top: 0;
-	height: 50px;
-	line-height: 50px;
-	width: 50px;
-	background: #fff;
-	border-left: 1px solid #fff;
-	text-shadow: none;
-	box-shadow: none;
-	display: inline-block;
-	border-radius: 0px;
-	border: none;
-	-webkit-transition: all 0.4s ease;
-	-moz-transition: all 0.4s ease;
-	transition: all 0.4s ease;
-	border-radius: 0 5px 5px 0;
-	color: #1A76D1;
-	font-size: 25px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 50px;
+    line-height: 50px;
+    width: 50px;
+    background: #fff;
+    border-left: 1px solid #fff;
+    text-shadow: none;
+    box-shadow: none;
+    display: inline-block;
+    border-radius: 0px;
+    border: none;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    border-radius: 0 5px 5px 0;
+    color: #000;
+    font-size: 25px;
 }
 .footer .single-footer .newsletter-inner .button i{
-	-webkit-transition:all 0.4s ease;
-	-moz-transition:all 0.4s ease;
-	transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease;
+    transition:all 0.4s ease;
 }
 .footer .single-footer .newsletter-inner .button:hover i{
-	color:#2C2D3F;
+    color:#2C2D3F;
 }
 .footer .copyright{
-	background:#1A76D1;
-	padding:25px 0px 25px 0px;
-	text-align:center;
+    background:#0a0a0a;
+    padding:25px 0px 25px 0px;
+    text-align:center;
 }
 .footer .copyright .copyright-content p{
-	color:#fff;
+    color:#fff;
 }
 .footer .copyright .copyright-content p a{
-	color:#fff;
-	font-weight:400;
-	text-decoration:underline;
-	display:inline-block;
-	margin-left:4px;
+    color:#fff;
+    font-weight:400;
+    text-decoration:underline;
+    display:inline-block;
+    margin-left:4px;
 }
+
+.footer-block span {
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Layout específico para redes sociais */
+.social.redes-sociais-layout {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+}
+.social-row {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin: 5px 0;
+}
+.social.redes-sociais-layout li {
+    margin: 0 15px 0 0;
+    list-style: none;
+}
+.social.redes-sociais-layout li a {
+    display: inline-block;
+    font-size: 1.2em;
+}
+
+/* Centralização das colunas */
+.row.justify-content-center {
+    justify-content: center !important;
+}
+@media only screen and (max-width: 995px) {
+    .footer-top .row {
+        flex-direction: column;
+    }
+}
+
+
 /*=========================
 	End Footer CSS
 ===========================*/

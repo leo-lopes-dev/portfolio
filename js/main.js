@@ -300,32 +300,22 @@ Version:	1.1
 		  verticalOffset: 0
 		});
 
-		/*====================
-			Google Maps JS
-		======================*/
-		var map = new GMaps({
-				el: '#map',
-				lat: 23.011245,
-				lng: 90.884780,
-				scrollwheel: false,
-			});
-			map.addMarker({
-				lat: 23.011245,
-				lng: 90.884780,
-				title: 'Marker with InfoWindow',
-				infoWindow: {
-				content: '<p>welcome to Medipro</p>'
-			}
-		
-		});
 	});
-	
-	/*====================
-		Preloader JS
-	======================*/
-	$(window).on('load', function() {
-		$('.preloader').addClass('preloader-deactivate');
-	});
-	
 	
 })(jQuery);
+
+
+/*====================
+	Loader JS Novo
+======================*/
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        var loader = document.getElementById('loader');
+        loader.style.opacity = '0';
+        
+        // Remove o loader completamente após a transição
+        setTimeout(function() {
+            loader.style.display = 'none';
+        }, 500); // Tempo correspondente à duração da transição (0.5s)
+    }, 500); // 0,5 segundo
+});

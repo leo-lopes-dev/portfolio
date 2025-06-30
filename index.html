@@ -19,6 +19,7 @@
 		<link rel="stylesheet" href="css/nice-select.css">
 		<!-- Font Awesome CSS -->
         <link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
 		<!-- icofont CSS -->
         <link rel="stylesheet" href="css/icofont.css">
 		<!-- Slicknav -->
@@ -48,445 +49,458 @@
 		<!-- Fim Botão Flutuante do WhatsApp -->
 	</head>
     <body>
-    <!-- Header Area -->
-    <header class="header">
-        <div class="header-inner">
-            <!-- Mobile Nav -->
-            <div class="mobile-nav"></div>
-            <!-- End Mobile Nav -->
-            <div class="container">
-                <div class="inner">
-                    <div class="main-menu">
-                        <nav class="navigation">
-                            <ul class="nav menu">
-                                <li><a href="#">Home</a></li>
-                                <li><a href="#">Quem Sou Eu</a></li>
-                                <li><a href="#">Capacitações</a></li>
-                                <li><a href="#">Contato</a></li>
-                            </ul>
-                        </nav>
+
+        <!-- Loader -->
+        <div id="loader">
+            <div class="loader-content">
+                <div class="spinner"></div>
+                <p>Carregando...</p>
+            </div>
+        </div>
+
+        <!-- Header Area -->
+        <header class="header">
+            <div class="header-inner">
+                <!-- Mobile Nav -->
+                <div class="mobile-nav"></div>
+                <!-- End Mobile Nav -->
+                <div class="container">
+                    <div class="inner">
+                        <div class="main-menu">
+                            <nav class="navigation">
+                                <ul class="nav menu">
+                                    <li><a href="#">Home</a></li>
+                                    <li><a href="#quemsoueu">Quem Sou Eu</a></li>
+                                    <li><a href="#capacitacoes">Capacitações</a></li>
+                                    <li><a href="#experiencias">Experiências</a></li>
+                                    <li><a href="#contatos">Contatos</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header Area -->
+            
+
+
+
+
+        <!-- Começo da Área Banner -->
+    <section class="banner" style="background-image: url('imgs/img-banner-fundo.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 d-flex align-items-center wow fadeInLeft bannerTexto" data-wow-duration="1.5s" data-wow-delay="1.5s">
+                    <div class="text">
+                        <p>Olá! eu sou</p>
+                        <h1 id="typing-title">Leonardo Lopes<span class="cursor">_</span></h1>
+                        <h2>Desenvolvedor Fullstack</h2>
+                    </div>
+                </div>
+                <div class="col-lg-5 text-center wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.5s">
+                    <div class="banner-image">
+                        <img src="imgs/imagemLeo.png" alt="Imagem do banner" class="img-fluid">
                     </div>
                 </div>
             </div>
         </div>
-    </header>
-    <!-- End Header Area -->
-		
+    </section>
+        <!-- Fim da Área Banner -->
 
-
-
-
-    <!-- Começo da Área Banner -->
-<section class="banner" style="background-image: url('imgs/1675447754457.gif'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-lg-7 d-flex align-items-center  wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="text">
-                    <p>Olá! eu sou</p>
-                    <h1>Leonardo Lopes</h1>
-                    <h2>Desenvolvedor Fullstack_</h2>
+    <!-- Começo da Área Quem Sou Eu -->
+    <section class="services section" id="quemsoueu">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h2>Quem sou eu?</h2>
+                        <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Sou um desenvolvedor web que tem como foco, por meio da criação de sites, preparar o ambiente digital para pessoas e empresas, a fim de expor a marca profissional, facilitar o contato com o cliente e ampliar a visibilidade da marca por meio de estratégias de SEO.</p>
+                    </div>
                 </div>
             </div>
-            <div class="col-lg-5 text-center wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <div class="banner-image">
-                    <img src="imgs/imagemLeo.png" alt="Imagem do banner" class="img-fluid">
+            <div class="row align-items-left">
+                <!-- Imagem -->
+                <div class="col-lg-5 text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <img src="imgs/imagemBanner.png" alt="Imagem sobre quem sou eu" class="img-fluid" id="minhaImagem">
+                </div>
+                <!-- Texto -->
+                <div class="col-lg-7">
+                    <div class="static-menu wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="menu-title">
+                            <span>Desenvolvimento Fullstack</span>
+                        </div>
+                        <div class="content">
+                            <p>Tenho experiência no desenvolvimento de aplicações completas, tanto no front-end quanto no back-end. Trabalho com tecnologias como HTML, CSS, JavaScript, TypeScript e React (ou React Native para aplicativos mobile), além de Node.js no back-end. Também sou capaz de criar protótipos no Figma, projetar arquiteturas escaláveis e implementar APIs. Além disso, cuido da hospedagem do projeto, garantindo que ele esteja acessível pelo domínio (nome do site) escolhido pelo cliente.</p>
+                        </div>
+                    </div>
+                    <div class="static-menu wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+                        <div class="menu-title">
+                            <span>Banco de dados</span>
+                        </div>
+                        <div class="content">
+                            <p>Possuo conhecimento em bancos de dados como PostgreSQL e MySQL. Sei projetar estruturas eficientes, otimizar consultas e implementar mecanismos de backup e recuperação, garantindo um gerenciamento eficaz de operações CRUD (Create, Read, Update e Delete).</p>
+                        </div>
+                    </div>
+                    <div class="static-menu wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="menu-title">
+                            <span>E-commerce, landing pages e sites institucionais</span>
+                        </div>
+                        <div class="content">
+                            <p>Tenho experiência na criação de plataformas de e-commerce, integrando soluções de pagamento e gerenciamento de produtos. Também desenvolvo landing pages otimizadas para fácil interação cliente e profissional, além de sites institucionais com foco em SEO, responsividade e identidade visual. Utilizo ferramentas modernas como Bootstrap e frameworks populares para entregar projetos profissionais e eficientes.</p> 
+                        </div>
+                    </div>                
                 </div>
             </div>
         </div>
-    </div>
-</section>
-    <!-- Fim da Área Banner -->
-
-<!-- Começo da Área Quem Sou Eu -->
-<section class="services section" id="OQueEuFaco">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-                <div class="section-title text-center wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
-                    <h2>Quem sou eu?</h2>
-                    <p class="wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">Sou um desenvolvedor web que busca solucionar problemas, trazendo soluções adaptativas e pensadas para cada desafio que me proponho. Tenho experiência em diversas áreas do desenvolvimento e acredito que a tecnologia tem o poder de transformar negócios e facilitar a vida das pessoas.</p>
-                </div>
-            </div>
-        </div>
-        <div class="row align-items-left">
-            <!-- Imagem -->
-            <div class="col-lg-5 text-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.5s">
-                <img src="imgs/imagemBanner.png" alt="Imagem sobre quem sou eu" class="img-fluid" id="minhaImagem">
-            </div>
-            <!-- Texto -->
-            <div class="col-lg-7 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
-                <details class="expandable-menu wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s" open>
-                    <summary>
-                        <span>Desenvolvimento Fullstack</span>
-                    </summary>
-                    <div class="content">
-                        <p>Tenho experiência no desenvolvimento de aplicações completas, tanto no front-end quanto no back-end. Trabalho com tecnologias como HTML, CSS, JavaScript, TypeScript e React (ou React Native para aplicativos mobile), além de Node.js no back-end. Também sou capaz de criar protótipos no Figma, projetar arquiteturas escaláveis e implementar APIs.</p>
-                    </div>
-                </details>
-                <details class="expandable-menu wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s" open>
-                    <summary>
-                        <span>Banco de dados</span>
-                    </summary>
-                    <div class="content">
-                        <p>Possuo conhecimento em bancos de dados como PostgreSQL e MySQL. Sei projetar estruturas eficientes, otimizar consultas e implementar mecanismos de backup e recuperação, garantindo um gerenciamento eficaz de operações CRUD (Create, Read, Update e Delete).</p>
-                    </div>
-                </details>
-                <details class="expandable-menu wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s" open>
-                    <summary>
-                        <span>E-commerce, landing pages e sites institucionais</span>
-                    </summary>
-                    <div class="content">
-                        <p>Tenho experiência na criação de plataformas de e-commerce, integrando soluções de pagamento e gerenciamento de produtos. Também desenvolvo landing pages otimizadas para fácil interação cliente e profissional, além de sites institucionais com foco em SEO, responsividade e identidade visual. Utilizo ferramentas modernas como Bootstrap e frameworks populares para entregar projetos profissionais e eficientes.</p> 
-                    </div>
-                </details>                
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ Fim da Área Quem Sou Eu -->
+    </section>
+    <!--/ Fim da Área Quem Sou Eu -->
 
 
 
-		<!-- Começo da Área Capacitações -->
-<section class="skills section bg-light" id="capacitacoes">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="section-title">
-                    <h2 class="mb-4">Minhas Capacitações</h2>
-                    <p class="lead">Domino um conjunto diversificado de tecnologias modernas que me permitem criar soluções eficientes. Estas são minhas principais ferramentas:</p>
-				</div>
-            </div>
-        </div>
-        <div class="row g-4">
-            <!-- Node.js -->
-            <div class="col-lg-4 col-md-6">
-                <div class="skill-card card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center p-4">
-                        <i class="fab fa-node-js fa-3x text-success mb-3"></i>
-                        <h4 class="card-title">Node.js</h4>
-                        <p class="card-text">Experiência no desenvolvimento de aplicações com Express, Node.js e NPM. Conhecimento em autenticação JWT (JSON Web Token), integração com AWS (Amazon Web Services) e otimização de performance.</p>
-                        <div class="badges mt-2">
-                            <span class="badge bg-light text-dark me-1">Express</span>
-                            <span class="badge bg-light text-dark me-1">NestJS</span>
-                            <span class="badge bg-light text-dark">TypeScript</span>
-                        </div>
+    <!-- Começo da Área Capacitações -->
+<section class="skills section bg-light " id="capacitacoes">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <div class="section-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <h2 class="mb-4">Minhas Capacitações</h2>
+                        <p class="lead">Domino um conjunto diversificado de tecnologias que me permitem criar soluções eficientes. Estas são minhas principais ferramentas:</p>
                     </div>
                 </div>
             </div>
-
-            <!-- JavaScript -->
-            <div class="col-lg-4 col-md-6">
-                <div class="skill-card card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center p-4">
-                        <i class="fab fa-js-square fa-3x text-warning mb-3"></i>
-                        <h4 class="card-title">JavaScript</h4>
-                        <p class="card-text">Domínio avançado de ES6+, programação assíncrona, manipulação do DOM e padrões de projeto. Experiência com testes unitários (Jest, Mocha) e boas práticas de código limpo.</p>
-                        <div class="badges mt-2">
-                            <span class="badge bg-light text-dark me-1">ES6+</span>
-                            <span class="badge bg-light text-dark me-1">AJAX</span>
-                            <span class="badge bg-light text-dark">Jest</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- HTML5 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="skill-card card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center p-4">
-                        <i class="fab fa-html5 fa-3x text-danger mb-3"></i>
-                        <h4 class="card-title">HTML5</h4>
-                        <p class="card-text">Criação de estruturas semânticas, acessíveis e otimizadas para SEO. Domínio de elementos modernos como Canvas, Web Components e integração com APIs do navegador.</p>
-                        <div class="badges mt-2">
-                            <span class="badge bg-light text-dark me-1">Semântica</span>
-                            <span class="badge bg-light text-dark me-1">Acessibilidade</span>
-                            <span class="badge bg-light text-dark">SEO</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- CSS3 -->
-            <div class="col-lg-4 col-md-6">
-                <div class="skill-card card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center p-4">
-                        <i class="fab fa-css3-alt fa-3x text-info mb-3"></i>
-                        <h4 class="card-title">CSS3</h4>
-                        <p class="card-text">Estilização avançada com Flexbox, Grid, animações e variáveis CSS. Experiência em metodologias como BEM e pré-processadores como SASS/LESS.</p>
-                        <div class="badges mt-2">
-                            <span class="badge bg-light text-dark me-1">Flexbox</span>
-                            <span class="badge bg-light text-dark me-1">Grid</span>
-                            <span class="badge bg-light text-dark">SASS</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- APIs -->
-            <div class="col-lg-4 col-md-6">
-                <div class="skill-card card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center p-4">
-                        <i class="fas fa-exchange-alt fa-3x text-primary mb-3"></i>
-                        <h4 class="card-title">APIs RESTful</h4>
-                        <p class="card-text">Desenvolvimento de APIs robustas com autenticação, documentação (Swagger/OpenAPI), versionamento e boas práticas de design REST. Experiência com GraphQL também.</p>
-                        <div class="badges mt-2">
-                            <span class="badge bg-light text-dark me-1">REST</span>
-                            <span class="badge bg-light text-dark me-1">GraphQL</span>
-                            <span class="badge bg-light text-dark">Swagger</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- React Native -->
-            <div class="col-lg-4 col-md-6">
-                <div class="skill-card card h-100 border-0 shadow-sm">
-                    <div class="card-body text-center p-4">
-                        <i class="fab fa-react fa-3x text-info mb-3"></i>
-                        <h4 class="card-title">React Native</h4>
-                        <p class="card-text">Desenvolvimento de aplicativos móveis multiplataforma com React Native. Experiência em componentes nativos, navegação, estado (Redux, Context API) e integração com APIs.</p>
-                        <div class="badges mt-2">
-                            <span class="badge bg-light text-dark me-1">Expo</span>
-                            <span class="badge bg-light text-dark me-1">Hooks</span>
-                            <span class="badge bg-light text-dark">Redux</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ Fim da Área Capacitações -->
-		
-
-		<!-- Começo da Área Experiências-->
-		<section class="experiences section">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12">
-						<div class="section-title">
-							<h2>Experiências</h2>
-							<p>Projetos que desenvolvi</p>
-						</div>
-					</div>
-				</div>
-				
-				<div class="experiences-container">
-					<!-- Projeto 1 -->
-					<div class="project-card">
-						<div class="project-info">
-							<h3>Vida em Gotas</h3>
-							<p>Atuei no desenvolvimento backend no <a href="https://vidaemgotas.com.br/" target="_blank">vidaemgotas</a></p>
-						</div>
-						<iframe class="siteIframe" src="https://vidaemgotas.com.br/" allowfullscreen title="Site Vida em Gotas"></iframe>
-					</div>
-					
-					<!-- Projeto 2 -->
-					<div class="project-card">
-						<div class="project-info">
-							<h3>Poticlean</h3>
-							<p>Manutenção e repaginação do site</p>
-						</div>
-						<iframe class="siteIframe" src="https://poticlean.com.br/" allowfullscreen title="Site Poticlean"></iframe>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--/ Fim da Área Experiências-->
-
-		<!-- Começo da Área Contate-me -->
-		<!-- Nessa área vai ficar o botão de call para o whatsapp -->
-		<section class="call-action overlay" data-stellar-background-ratio="0.5">
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-12">
-						<div class="content">
-							<h2>Entre em contato comigo! (84) 98741-2830</h2>
-							<p>Clique no botão abaixo e entre em contato comigo através do canal do whatsapp!</p>
-							<div class="button">
-								<a href="https://wa.me/5584987412830?text=Olá,%20vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20conversar!" target="_blank" class="btn" id="contatoBotao">Contate Agora</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!--/ Fim da Área Contate-me -->
-		
-		<!-- Start Appointment -->
-<section class="appointment">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-12">
-                <div class="section-title">
-                    <h2>Fale comigo pelo e-mail</h2>
-                    <p>Através do formulário abaixo, envie um e-mail de contato para mim!</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-12 col-md-12 col-12">
-                <form class="form" action="https://formspree.io/f/meokodwo" method="POST">
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input name="name" type="text" placeholder="Nome" required>
-                            </div>
-                        </div>
-                        <div class="col-lg-6 col-md-6 col-12">
-                            <div class="form-group">
-                                <input name="email" type="email" placeholder="Email" required>
-                            </div>
-                        </div>
-                        <div class="col-lg-12 col-md-12 col-12">
-                            <div class="form-group">
-                                <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
+            <div class="row g-4">
+                <!-- Node.js -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card card h-100 border-0 shadow-sm wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <div class="card-body text-center p-4">
+                            <i class="fab fa-node-js fa-3x text-success mb-3"></i>
+                            <h4 class="card-title">Node.js</h4>
+                            <p class="card-text">Experiência no desenvolvimento de aplicações com Express, Node.js e NPM. Conhecimento em autenticação JWT (JSON Web Token para Login) e otimização de performance.</p>
+                            <div class="badges mt-2">
+                                <span class="badge bg-light text-dark me-1">Express</span>
+                                <span class="badge bg-light text-dark me-1">NestJS</span>
+                                <span class="badge bg-light text-dark">TypeScript</span>
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-lg-5 col-md-4 col-12">
-                            <div class="form-group">
-                                <div class="button">
-                                    <button type="submit" class="btn">Enviar e-mail</button>
+                </div>
+
+                <!-- Fullstack -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card card h-100 border-0 shadow-sm wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                        <div class="card-body text-center p-4">
+                            <div class="icon-group mb-3">
+                                <i class="fab fa-js-square fa-2x text-warning me-2"></i>
+                                <i class="fab fa-html5 fa-2x text-danger me-2"></i>
+                                <i class="fab fa-css3-alt fa-2x text-info"></i>
+                            </div>
+                            <h4 class="card-title">Fullstack</h4>
+                            <p class="card-text">Domínio completo do desenvolvimento web, desde a construção de interfaces responsivas com HTML/CSS até a lógica de negócios com JavaScript. Experiência em criar aplicações completas do front-end ao back-end.</p>
+                            <div class="badges mt-2">
+                                <span class="badge bg-light text-dark me-1">JavaScript</span>
+                                <span class="badge bg-light text-dark me-1">HTML5</span>
+                                <span class="badge bg-light text-dark">CSS3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PostgreSQL -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card card h-100 border-0 shadow-sm wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-database fa-3x text-primary mb-3"></i>
+                            <h4 class="card-title">PostgreSQL</h4>
+                            <p class="card-text">Experiência em modelagem de bancos de dados relacionais, otimização de consultas SQL. Conhecimento em migrações, backups e replicação de dados.</p>
+                            <div class="badges mt-2">
+                                <span class="badge bg-light text-dark me-1">Modelagem</span>
+                                <span class="badge bg-light text-dark me-1">Consultas</span>
+                                <span class="badge bg-light text-dark">Otimização</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Amazon S3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card card h-100 border-0 shadow-sm wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                        <div class="card-body text-center p-4">
+                            <i class="fab fa-aws fa-3x text-warning mb-3"></i>
+                            <h4 class="card-title">Amazon S3</h4>
+                            <p class="card-text">Experiência no armazenamento e gerenciamento de arquivos na nuvem com Amazon S3. Configuração de buckets, políticas de acesso, versionamento e integração com aplicações web e mobile.</p>
+                            <div class="badges mt-2">
+                                <span class="badge bg-light text-dark me-1">Buckets</span>
+                                <span class="badge bg-light text-dark me-1">Armazenamento</span>
+                                <span class="badge bg-light text-dark">CDN</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- APIs -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card card h-100 border-0 shadow-sm wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+                        <div class="card-body text-center p-4">
+                            <i class="fas fa-exchange-alt fa-3x text-primary mb-3"></i>
+                            <h4 class="card-title">APIs RESTful</h4>
+                            <p class="card-text">Desenvolvimento de APIs robustas com autenticação, documentação (Swagger), versionamento e boas práticas de design REST.</p>
+                            <div class="badges mt-2">
+                                <span class="badge bg-light text-dark me-1">REST</span>
+                                <span class="badge bg-light text-dark me-1">GraphQL</span>
+                                <span class="badge bg-light text-dark">Swagger</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- React Native -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="skill-card card h-100 border-0 shadow-sm wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                        <div class="card-body text-center p-4">
+                            <i class="fab fa-react fa-3x text-info mb-3"></i>
+                            <h4 class="card-title">React Native</h4>
+                            <p class="card-text">Desenvolvimento de aplicativos móveis multiplataforma com React Native. Experiência em componentes nativos, navegação e integração com APIs.</p>
+                            <div class="badges mt-2">
+                                <span class="badge bg-light text-dark me-1">Expo</span>
+                                <span class="badge bg-light text-dark me-1">Hooks</span>
+                                <span class="badge bg-light text-dark">Redux</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Fim da Área Capacitações -->
+            
+
+    <!-- Começo da Área Experiências-->
+    <section class="experiences section" id="experiencias">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="section-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h2>Experiências</h2>
+                        <p>Projetos nos quais atuei como desenvolvedor</p> 
+                    </div>
+                </div>
+            </div>
+            
+            <div class="experiences-container">
+                <!-- Projeto 1 - Vida em Gotas -->
+                <div class="project-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.4s">
+                    <div class="project-info">
+                        <h3>Vida em Gotas</h3>
+                        <p>Atuei no desenvolvimento back-end do projeto <a href="https://vidaemgotas.com.br/" target="_blank">vidaemgotas</a>, realizando a prototipação, reestruturação de pastas, organizei as consultas CRUD e modelo do banco de dados, criação de rotas e por fim ajustei e criei a lógica do JavaScript. Todo o trabalho foi feito em colaboração com a equipe e o tech leader.</p> 				
+                    </div>
+                    <iframe class="siteIframe" src="https://vidaemgotas.com.br/" allowfullscreen title="Site Vida em Gotas"></iframe>
+                </div>
+                
+                <!-- Projeto 2 - Poticlean (comentado/desativado) -->
+                <!--
+                <div class="project-card wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <div class="project-info">
+                        <h3>Poticlean</h3>
+                        <p>Realizei o desenvolvimento fullstack da aplicação, implementando features críticas como sistema de agendamento, pagamentos integrados e dashboard administrativo. Trabalhei com Node.js no backend e React no frontend, além de integrar com serviços de terceiros.</p>
+                    </div>
+                    <iframe class="siteIframe" src="https://poticlean.com.br/" allowfullscreen title="Site Poticlean"></iframe>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+    <!--/ Fim da Área Experiências-->
+
+    <!-- Começo da Área Contate-me -->
+    <section class="call-action overlay" data-stellar-background-ratio="0.5" id="contatos">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="content wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h2>Entre em contato comigo! (84) 98741-2830</h2>
+                        <p>Clique no botão abaixo e entre em contato comigo através do canal do whatsapp!</p>
+                        <div class="button wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
+                            <a href="https://wa.me/5584987412830?text=Olá,%20vim%20pelo%20seu%20portfólio%20e%20gostaria%20de%20conversar!" target="_blank" class="btn" id="contatoBotao">Contate Agora</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--/ Fim da Área Contate-me -->
+
+    <!-- Começo Área contate-me e-mail -->
+    <section class="appointment">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="section-title wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                        <h2>Fale comigo pelo e-mail</h2>
+                        <p>Através do formulário abaixo, envie um e-mail de contato para mim!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-12">
+                    <form action="https://formspree.io/f/meokodwo" method="POST" class="form">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12 wow fadeInUp">
+                                <div class="form-group">
+                                    <input name="name" type="text" placeholder="Nome" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.6s">
+                                <div class="form-group">
+                                    <input name="email" type="email" placeholder="Email" required>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.7s">
+                                <div class="form-group">
+                                    <textarea name="message" placeholder="Escreva sua mensagem aqui..." required></textarea>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    
-                    <!-- Adicione estes campos ocultos para melhorar o Formspree -->
-                    <input type="hidden" name="_language" value="pt">
-                    <input type="hidden" name="_subject" value="Novo contato do seu site">
-                    <input type="hidden" name="_next" value="obrigadoforms.html">
-                </form>
+                        <div class="row">
+                            <div class="col-lg-5 col-md-4 col-12 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.8s">
+                                <div class="form-group">
+                                    <div class="button">
+                                        <button type="submit" class="btn">Enviar e-mail</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Adicione estes campos ocultos para melhorar o Formspree -->
+                        <input type="hidden" name="_language" value="pt">
+                        <input type="hidden" name="_subject" value="Novo contato do seu site">
+                        <input type="hidden" name="_next" value="obrigadoforms.html">
+                    </form>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-		<!-- End Appointment -->
-		
-		<!-- Footer Area -->
-		<footer id="footer" class="footer ">
-			<!-- Footer Top -->
-			<div class="footer-top">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-3 col-md-6 col-12">
-							<div class="single-footer">
-								<h2>Redes sociais</h2>
-								<!-- Social -->
-								<ul class="social">
-									<li><a href="#"><i class="icofont-facebook"></i></a></li>
-									<li><a href="#"><i class="icofont-google-plus"></i></a></li>
-									<li><a href="#"><i class="icofont-twitter"></i></a></li>
-									<li><a href="#"><i class="icofont-vimeo"></i></a></li>
-									<li><a href="#"><i class="icofont-pinterest"></i></a></li>
-								</ul>
-								<!-- End Social -->
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-12">
-							<div class="single-footer f-link">
-								<h2>Acesso rápido</h2>
-								<div class="row">
-									<div class="col-lg-6 col-md-6 col-12">
-										<ul>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Cases</a></li>
-											<li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Other Links</a></li>	
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-3 col-md-6 col-12">
-							<div class="single-footer">
-								<h2>Contatos</h2>
-								<ul class="time-sidual">
-									<li class="day">E-mail<span>leonardolopes.dev3@gmail.com</span></li>
-									<li class="day">Telefone<span>(84) 999</span></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/ End Footer Top -->
-			<!-- Copyright -->
-			<div class="copyright">
-				<div class="container">
-					<div class="row">
-						<div class="col-lg-12 col-md-12 col-12">
-							<div class="copyright-content">
-								<p>© Copyright 2025  |  Todos os direitos reservados a:<a href="https://github.com/leo-lopes-dev" target="_blank">Leonardo Lopes</a> </p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<!--/ End Copyright -->
-		</footer>
-		<!--/ End Footer Area -->
-		
-		<!-- WOW JS -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-		<script>
-			new WOW().init();
-		</script>
-		<script>
-		document.querySelector('.form').addEventListener('submit', function(e) {
-			e.preventDefault();
-			fetch(this.action, {
-				method: 'POST',
-				body: new FormData(this),
-				headers: { 'Accept': 'application/json' }
-			})
-			.then(() => window.location.href = 'obrigadoforms.html')
-			.catch(() => alert('Erro ao enviar!'));
-		});
-		</script>
-		<!-- jquery Min JS -->
+    </section>
+    <!-- Fim Área contate-me e-mail -->
+            
+
+        <!-- Footer Area -->
+        <footer id="footer" class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-footer footer-block">
+                                <h2>Redes sociais</h2>
+                                <ul class="social redes-sociais-layout">
+                                    <div class="social-row first-row">
+                                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                        <li><a href="mailto:leonardolopes.dev3@gmail.com"><i class="fab fa-google"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/leonardo-lopes-link/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                                    </div>
+                                    <div class="social-row second-row">
+                                        <li><a href="https://github.com/leo-lopes-dev" target="_blank"><i class="fab fa-github"></i></a></li>
+                                        <li><a href="https://wa.me/5584987412830" target="_blank"><i class="fab fa-whatsapp"></i></a></li>
+                                    </div>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-footer f-link footer-block">
+                                <h2>Acesso rápido</h2>
+                                <ul>
+                                    <li><a href="#"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
+                                    <li><a href="#quemsoueu"><i class="fa fa-caret-right" aria-hidden="true"></i>Quem Sou Eu</a></li>
+                                    <li><a href="#capacitacoes"><i class="fa fa-caret-right" aria-hidden="true"></i>Capacitações</a></li>
+                                    <li><a href="#experiencias"><i class="fa fa-caret-right" aria-hidden="true"></i>Experiências</a></li>
+                                    <li><a href="#contatos"><i class="fa fa-caret-right" aria-hidden="true"></i>Contatos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-4 col-md-6 col-12">
+                            <div class="single-footer footer-block">
+                                <h2>Contatos</h2>
+                                <p>E-mail:</p>
+                                <span>leonardolopes.dev3@gmail.com</span>
+                                <p>Telefone:</p>
+                                <span>(84) 98741-2830</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-12">
+                            <div class="copyright-content">
+                                <p>© Copyright 2025  |  Todos os direitos reservados a:<a href="https://github.com/leo-lopes-dev" target="_blank">Leonardo Lopes</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!--/ End Footer Area -->
+
+            
+        <!-- WOW JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script>
+        document.querySelector('.form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            fetch(this.action, {
+                method: 'POST',
+                body: new FormData(this),
+                headers: { 'Accept': 'application/json' }
+            })
+            .then(() => window.location.href = 'obrigadoforms.html')
+            .catch(() => alert('Erro ao enviar!'));
+        });
+        </script>
+        <!-- jquery Min JS -->
         <script src="js/jquery.min.js"></script>
-		<!-- jquery Migrate JS -->
-		<script src="js/jquery-migrate-3.0.0.js"></script>
-		<!-- jquery Ui JS -->
-		<script src="js/jquery-ui.min.js"></script>
-		<!-- Easing JS -->
+        <!-- jquery Migrate JS -->
+        <script src="js/jquery-migrate-3.0.0.js"></script>
+        <!-- jquery Ui JS -->
+        <script src="js/jquery-ui.min.js"></script>
+        <!-- Easing JS -->
         <script src="js/easing.js"></script>
-		<!-- Color JS -->
-		<script src="js/colors.js"></script>
-		<!-- Popper JS -->
-		<script src="js/popper.min.js"></script>
-		<!-- Bootstrap Datepicker JS -->
-		<script src="js/bootstrap-datepicker.js"></script>
-		<!-- Jquery Nav JS -->
+        <!-- Color JS -->
+        <script src="js/colors.js"></script>
+        <!-- Popper JS -->
+        <script src="js/popper.min.js"></script>
+        <!-- Bootstrap Datepicker JS -->
+        <script src="js/bootstrap-datepicker.js"></script>
+        <!-- Jquery Nav JS -->
         <script src="js/jquery.nav.js"></script>
-		<!-- Slicknav JS -->
-		<script src="js/slicknav.min.js"></script>
-		<!-- ScrollUp JS -->
+        <!-- Slicknav JS -->
+        <script src="js/slicknav.min.js"></script>
+        <!-- ScrollUp JS -->
         <script src="js/jquery.scrollUp.min.js"></script>
-		<!-- Niceselect JS -->
-		<script src="js/niceselect.js"></script>
-		<!-- Tilt Jquery JS -->
-		<script src="js/tilt.jquery.min.js"></script>
-		<!-- counterup JS -->
-		<script src="js/jquery.counterup.min.js"></script>
-		<!-- Steller JS -->
-		<script src="js/steller.js"></script>
-		<!-- Wow JS -->
-		<script src="js/wow.min.js"></script>
-		<!-- Magnific Popup JS -->
-		<script src="js/jquery.magnific-popup.min.js"></script>
-		<!-- Counter Up CDN JS -->
-		<script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-		<!-- Bootstrap JS -->
-		<script src="js/bootstrap.min.js"></script>
-		<!-- Main JS -->
-		<script src="js/main.js"></script>
-		<!-- Botao JS -->
-		<script src="js/jsBotao.js"></script>
+        <!-- Niceselect JS -->
+        <script src="js/niceselect.js"></script>
+        <!-- Tilt Jquery JS -->
+        <script src="js/tilt.jquery.min.js"></script>
+        <!-- counterup JS -->
+        <script src="js/jquery.counterup.min.js"></script>
+        <!-- Steller JS -->
+        <script src="js/steller.js"></script>
+        <!-- Wow JS -->
+        <script src="js/wow.min.js"></script>
+        <!-- Magnific Popup JS -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <!-- Counter Up CDN JS -->
+        <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="js/bootstrap.min.js"></script>
+        <!-- Main JS -->
+        <script src="js/main.js"></script>
+        <!-- Botao JS -->
+        <script src="js/jsBotao.js"></script>
     </body>
 </html>
