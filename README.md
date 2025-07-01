@@ -1,6 +1,6 @@
 # 💼 Portfólio Pessoal
 
-Este é um repositório que criei para hospedar e explicar o código do meu projeto de portfólio pessoal!  
+Este é um repositório que criei para hospedar e explicar o código do meu projeto de portfólio pessoal.  
 Nele conto detalhes e documento como fiz o código de todo o projeto.
 
 ---
